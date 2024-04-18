@@ -1,11 +1,12 @@
 package task1.circles;
 
+import task1.circles.common.Interactable;
 import task1.circles.common.MainCanvas;
 import task1.circles.common.Sprite;
 
 import java.awt.*;
 
-public class Background extends Sprite {
+public class Background implements Interactable {
     private float time;
     private static final float AMPLITUDE = 255f / 2;
     private Color color;

@@ -14,7 +14,7 @@ public class MainWindow extends JFrame implements CanvasRepaintListener/*мож�
     private static final int WIDTH = 800;
     private static final int HEIGTH = 600;
     private static final int DEFAULT_SPR = 10;
-    private static final int MAX_SPR = 50;
+    private static final int MAX_SPR = 15;
     private static final Interactable[] sprites = new Interactable[MAX_SPR];
     private int countSprites;
 
@@ -25,7 +25,7 @@ public class MainWindow extends JFrame implements CanvasRepaintListener/*мож�
         sprites[0] = new Background();
         countSprites = 1;
         for (int i = 1; i < sprites.length; i++) {
-            sprites[i] = new Ball();
+            sprites[i] = new Ball(getX(), getY());
         }
         MainCanvas canvas = new MainCanvas(this);
         addMouseListener(new MouseListener(this)/*сюда передаем ссылку на самого себя, если был имплементирован интерфейс адаптера*/); //(new MouseAdapter) { //можно добавить в аргумент адаптер и прееопределить один из методов
@@ -42,15 +42,17 @@ public class MainWindow extends JFrame implements CanvasRepaintListener/*мож�
         if (countSprites >= MAX_SPR) {
             System.out.println("Максимум шаров");
         }
-        sprites[countSprites++] = new Ball();
+        sprites[countSprites++] = new Ball(x, y);
     }
 
     public void delBall() {
         if (countSprites <= 1){
             return;
         }
-        countSprites--;
+//        countSprites--;
+        sprites[countSprites] = int
     }
+
 
     @Override
     public void onDrawFrame(MainCanvas canvas, Graphics g, float deltaTime) {

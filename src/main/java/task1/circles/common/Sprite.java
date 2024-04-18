@@ -8,6 +8,11 @@ public abstract class Sprite implements Interactable {
     protected float halfWigth;
     protected float halfHeight;
 
+    public Sprite(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     protected float getLeft() {
         return x - halfWigth;
     }

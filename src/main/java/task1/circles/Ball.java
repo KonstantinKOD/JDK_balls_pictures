@@ -12,7 +12,8 @@ public class Ball extends Sprite {
     private float vX;
     private float vY;
 
-    Ball() {
+    public Ball(int x, int y) {
+        super(x, y);
         halfHeight = 20 + (float) (Math.random() * 50f);
         halfWigth = halfHeight;
         color = new Color(rnd.nextInt());
