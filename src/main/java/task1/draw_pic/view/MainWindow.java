@@ -1,9 +1,11 @@
-package task1.circles;
+package task1.circles.view;
 
 
-import task1.circles.common.CanvasRepaintListener;
-import task1.circles.common.Interactable;
-import task1.circles.common.MainCanvas;
+import task1.circles.sprites.Background;
+import task1.circles.sprites.Ball;
+import task1.common.CanvasRepaintListener;
+import task1.common.Interactable;
+import task1.common.MainCanvas;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,7 +20,7 @@ public class MainWindow extends JFrame implements CanvasRepaintListener/*мож�
     private static final Interactable[] sprites = new Interactable[MAX_SPR];
     private int countSprites;
 
-    private MainWindow() {
+    public MainWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(P_X, P_Y, WIDTH, HEIGTH);
         setTitle("Circles");
@@ -49,8 +51,7 @@ public class MainWindow extends JFrame implements CanvasRepaintListener/*мож�
         if (countSprites <= 1){
             return;
         }
-//        countSprites--;
-        sprites[countSprites] = int
+        countSprites--;
     }
 
 

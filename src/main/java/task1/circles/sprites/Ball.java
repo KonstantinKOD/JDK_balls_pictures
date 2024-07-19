@@ -1,7 +1,7 @@
-package task1.circles;
+package task1;
 
-import task1.circles.common.MainCanvas;
-import task1.circles.common.Sprite;
+import task1.common.MainCanvas;
+import task1.common.Sprite;
 
 import java.awt.*;
 import java.util.Random;

@@ -1,8 +1,7 @@
-package task1.circles;
+package task1.draw_pic;
 
-import task1.circles.common.Interactable;
-import task1.circles.common.MainCanvas;
-import task1.circles.common.Sprite;
+import task1.common.Interactable;
+import task1.common.MainCanvas;
 
 import java.awt.*;
 

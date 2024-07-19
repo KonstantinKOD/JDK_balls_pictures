@@ -1,5 +1,5 @@
 
-package task1.circles;
+package task1;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
